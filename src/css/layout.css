@@ -294,9 +294,7 @@ section {
 }
 
 .section-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
+  display: inline-block;
   font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 700;
@@ -307,18 +305,6 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow-text-flow 6s linear infinite;
-}
-
-.section-tag::before {
-  content: '';
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #ff0055, #00f0ff);
-  box-shadow: 0 0 8px rgba(0, 240, 255, 0.9), 0 0 16px rgba(255, 0, 85, 0.7);
-  flex-shrink: 0;
-  animation: pulse-glow 2s ease-in-out infinite;
 }
 
 .section-title-large {
