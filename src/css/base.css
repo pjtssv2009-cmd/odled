@@ -1,4 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=supreme@400,500,700,800&display=swap');
+
+/* Supreme Font Family Declarations (Local & CDN Support) */
+@font-face {
+  font-family: 'Supreme';
+  src: url('/src/assets/fonts/supreme/Supreme-Regular.woff2') format('woff2'),
+       url('/src/assets/fonts/supreme/Supreme-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Supreme';
+  src: url('/src/assets/fonts/supreme/Supreme-Medium.woff2') format('woff2'),
+       url('/src/assets/fonts/supreme/Supreme-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Supreme';
+  src: url('/src/assets/fonts/supreme/Supreme-Bold.woff2') format('woff2'),
+       url('/src/assets/fonts/supreme/Supreme-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Supreme';
+  src: url('/src/assets/fonts/supreme/Supreme-Extrabold.woff2') format('woff2'),
+       url('/src/assets/fonts/supreme/Supreme-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   /* Color Palette - Premium Titanium / Dark Monochromatic Technology */
@@ -40,6 +78,7 @@
   --border-hover: rgba(255, 255, 255, 0.3);
 
   /* Typography Families */
+  --font-supreme: 'Supreme', 'Syne', 'Outfit', sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: 'Syne', 'Outfit', sans-serif;
   --font-heading: 'Outfit', 'Space Grotesk', sans-serif;
@@ -192,7 +231,7 @@ ul, ol {
 
 /* H1 & Large Typography Styles */
 h1, .hero-headline {
-  font-family: var(--font-display);
+  font-family: var(--font-supreme), 'Supreme', sans-serif;
   font-size: clamp(1.85rem, 5.5vw, 3.8rem);
   font-weight: 800;
   line-height: 1.08;

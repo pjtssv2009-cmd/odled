@@ -343,7 +343,7 @@ section {
 }
 
 .section-title-large {
-  font-family: var(--font-display);
+  font-family: var(--font-supreme), 'Supreme', sans-serif;
   font-size: clamp(1.65rem, 4.2vw, 2.8rem);
   font-weight: 800;
   line-height: 1.1;

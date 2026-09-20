@@ -1406,3 +1406,283 @@
   }
 }
 
+/* ==========================================================================
+   Horizontal Auto-Scrolling Visual Showcase (Image Ticker)
+   ========================================================================== */
+.section-image-ticker {
+  position: relative;
+  padding: 3.5rem 0 3rem;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.section-image-ticker::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 250px;
+  background: radial-gradient(ellipse, rgba(0, 240, 255, 0.05) 0%, rgba(255, 0, 128, 0.03) 40%, transparent 70%);
+  pointer-events: none;
+  filter: blur(50px);
+}
+
+.image-ticker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.image-ticker-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.ticker-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+}
+
+.ticker-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #00ff88;
+  box-shadow: 0 0 10px #00ff88;
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+.image-ticker-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.ticker-counter-pill {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+}
+
+.ticker-track-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1.35rem;
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.ticker-track-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.ticker-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  will-change: transform;
+}
+
+.ticker-track-left {
+  animation: ticker-slide-left 52s linear infinite;
+}
+
+.ticker-track-right {
+  animation: ticker-slide-right 52s linear infinite;
+}
+
+.ticker-track-wrapper:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-card {
+  position: relative;
+  flex: 0 0 320px;
+  width: 320px;
+  height: 210px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-tertiary);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease,
+              box-shadow 0.35s ease;
+  display: block;
+  text-decoration: none;
+}
+
+.ticker-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(0, 240, 255, 0.45);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 240, 255, 0.2);
+  z-index: 5;
+}
+
+.ticker-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+}
+
+.ticker-card:hover .ticker-card-img {
+  transform: scale(1.08);
+}
+
+.ticker-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 8, 10, 0.25) 0%, rgba(8, 8, 10, 0.1) 35%, rgba(8, 8, 10, 0.95) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  pointer-events: none;
+}
+
+.ticker-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticker-tag {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background: rgba(8, 8, 10, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-primary);
+}
+
+.ticker-tag-project {
+  color: #00ff88;
+  border-color: rgba(0, 255, 136, 0.35);
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.15);
+}
+
+.ticker-tag-outdoor {
+  color: #00f0ff;
+  border-color: rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
+}
+
+.ticker-tag-indoor {
+  color: #ffd60a;
+  border-color: rgba(255, 214, 10, 0.35);
+  box-shadow: 0 0 10px rgba(255, 214, 10, 0.15);
+}
+
+.ticker-tag-rental {
+  color: #ff007f;
+  border-color: rgba(255, 0, 128, 0.35);
+  box-shadow: 0 0 10px rgba(255, 0, 128, 0.15);
+}
+
+.ticker-tag-hardware {
+  color: #a855f7;
+  border-color: rgba(168, 85, 247, 0.35);
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.15);
+}
+
+.ticker-tag-signage {
+  color: #ff7b00;
+  border-color: rgba(255, 123, 0, 0.35);
+  box-shadow: 0 0 10px rgba(255, 123, 0, 0.15);
+}
+
+.ticker-card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.ticker-card-name {
+  font-family: var(--font-heading);
+  font-size: 0.94rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ticker-card-spec {
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .section-image-ticker {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .ticker-card {
+    flex: 0 0 250px;
+    width: 250px;
+    height: 165px;
+  }
+
+  .ticker-track-left {
+    animation-duration: 38s;
+  }
+
+  .ticker-track-right {
+    animation-duration: 38s;
+  }
+
+  .ticker-card-name {
+    font-size: 0.85rem;
+  }
+
+  .ticker-card-spec {
+    font-size: 0.68rem;
+  }
+
+  .image-ticker-header {
+    margin-bottom: 1.25rem;
+  }
+}
+
+
