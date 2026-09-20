@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outdoor LED Video Wall (OS Series) — Technical Specification | ODLED</title>
+  <meta name="description" content="Technical specifications, pixel pitch options, viewing distances, power requirements, and cabinet dimensions for ODLED OS Series Outdoor LED Video Walls.">
+  <link rel="icon" type="image/png" href="/src/assets/images/products/module-p2.jpg">
+  <link rel="stylesheet" href="/src/css/base.css">
+  <link rel="stylesheet" href="/src/css/layout.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="/src/css/animations.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container-wide">
+      <nav class="nav-wrapper" aria-label="Main Navigation">
+        <a href="/" class="brand-logo" aria-label="ODLED Home">
+          ODLED
+          <span class="logo-dot" aria-hidden="true"></span>
+          <span class="brand-badge">TECH</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="/products.html" class="nav-link active">Products</a></li>
+          <li><a href="/solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="/#technology" class="nav-link">Technology</a></li>
+          <li><a href="/projects.html" class="nav-link">Projects</a></li>
+          <li><a href="/about.html" class="nav-link">About</a></li>
+          <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button type="button" class="btn-login" data-open-login>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/>
+            </svg>
+            Cloud Login
+          </button>
+          <button type="button" class="btn btn-primary btn-sm" data-open-quote>Get a Quote</button>
+          <button type="button" class="mobile-toggle" aria-label="Toggle Navigation Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="/products.html" class="mobile-nav-link active">Products <span>→</span></a>
+      <a href="/solutions.html" class="mobile-nav-link">Solutions <span>→</span></a>
+      <a href="/#technology" class="mobile-nav-link">Technology <span>→</span></a>
+      <a href="/projects.html" class="mobile-nav-link">Projects <span>→</span></a>
+      <a href="/about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="/contact.html" class="mobile-nav-link">Contact & Quote <span>→</span></a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <button type="button" class="btn btn-cyan btn-lg" data-open-quote style="width: 100%;">Request a Quotation</button>
+    </div>
+  </div>
+
+  <main style="padding-top: 8rem;">
+    <!-- Breadcrumb -->
+    <div class="container" style="margin-bottom: 2rem;">
+      <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+        <a href="/" style="color: var(--text-secondary);">Home</a>
+        <span>/</span>
+        <a href="/products.html" style="color: var(--text-secondary);">Products</a>
+        <span>/</span>
+        <span style="color: var(--accent-cyan);" id="product-page-breadcrumb">Outdoor LED Video Wall (OS Series)</span>
+      </div>
+    </div>
+
+    <!-- Product Showcase Hero -->
+    <section style="padding: 2rem 0 5rem;">
+      <div class="container">
+        <div class="grid-2" style="align-items: center; gap: 4rem;">
+          
+          <div class="reveal-on-scroll">
+            <span class="badge badge-cyan" style="margin-bottom: 1rem;">IP65 HIGH-BRIGHTNESS ARCHITECTURE</span>
+            <h1 class="section-title-large" style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); margin-bottom: 1.5rem;" id="product-detail-title">
+              OUTDOOR LED<br>VIDEO WALLS
+            </h1>
+            <p class="section-desc-lead" style="margin-bottom: 2rem;" id="product-detail-summary">
+              ODLED OS Series displays are engineered for demanding outdoor commercial installations, roadside digital billboards, building facades, and sports arenas. Built with 6,500+ nits luminance, full IP65 waterproof sealing, and high refresh rate processing.
+            </p>
+
+            <div style="display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;">
+              <button type="button" class="btn btn-cyan btn-lg" data-open-quote>
+                Request Custom Size Quote
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <a href="#spec-calculator" class="btn btn-secondary btn-lg">
+                Screen Calculator ↓
+              </a>
+            </div>
+          </div>
+
+          <div class="reveal-on-scroll" style="position: relative;">
+            <div style="background: #000; border: 1px solid var(--border-light); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-card);">
+              <img id="product-detail-hero-img" src="/src/assets/images/products/outdoor-p4.jpg" alt="Outdoor LED Video Wall" style="width: 100%; height: auto; max-height: 480px; object-fit: cover;">
+            </div>
+            <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; background: rgba(7, 7, 9, 0.9); backdrop-filter: blur(10px); border: 1px solid var(--border-subtle); padding: 0.75rem 1.25rem; border-radius: var(--radius-md);">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); display: block;">ENGINEERED LIFESPAN</span>
+              <strong style="color: #fff; font-size: 1.1rem;">100,000+ Continuous Hours</strong>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Pixel Pitch Selector & Technical Specs -->
+    <section class="section-feature-dark" id="specifications">
+      <div class="container">
+        <div class="section-header-editorial reveal-on-scroll">
+          <span class="section-tag">ENGINEERING DATA</span>
+          <h2 class="section-title-large">SELECT PIXEL PITCH &<br>INSPECT SPECIFICATIONS.</h2>
+          <p class="section-desc-lead">
+            Click a pixel pitch variant to compare resolution density, optimal viewing distance, power consumption, and luminance levels.
+          </p>
+        </div>
+
+        <!-- Pitch Selector Buttons -->
+        <div class="tabs-nav reveal-on-scroll" style="margin-bottom: 2rem;">
+          <button type="button" class="tab-btn" data-spec-pitch="P2.5">OS-2.5 (P2.5)</button>
+          <button type="button" class="tab-btn" data-spec-pitch="P3.0">OS-3.0 (P3.0)</button>
+          <button type="button" class="tab-btn active" data-spec-pitch="P4.0">OS-4.0 (P4.0)</button>
+          <button type="button" class="tab-btn" data-spec-pitch="P5.0">OS-5.0 (P5.0)</button>
+          <button type="button" class="tab-btn" data-spec-pitch="P6.0">OS-6.0 (P6.0)</button>
+          <button type="button" class="tab-btn" data-spec-pitch="P8.0">OS-8.0 (P8.0)</button>
+          <button type="button" class="tab-btn" data-spec-pitch="P10.0">OS-10.0 (P10.0)</button>
+        </div>
+
+        <!-- Dynamic Spec Table & Highlights Card -->
+        <div class="grid-2 reveal-on-scroll" style="gap: 2.5rem; align-items: start;">
+          
+          <!-- Spec Highlights Box -->
+          <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem;">
+              <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: #fff;" id="spec-name">ODLED OS-4.0</h3>
+              <span class="badge badge-cyan" id="spec-category-badge">OUTDOOR FLAGSHIP</span>
+            </div>
+
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;" id="spec-desc">
+              The industry benchmark for roadside commercial advertising and shopping center facades. Balances high pixel clarity at mid-range distances (4m+) with exceptional energy efficiency.
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+              <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1rem;">
+                <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Pixel Density</span>
+                <strong style="display: block; font-family: var(--font-heading); font-size: 1.3rem; color: #fff; margin-top: 0.2rem;" id="spec-density">62,500 Dots/m²</strong>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1rem;">
+                <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Optimal Viewing Distance</span>
+                <strong style="display: block; font-family: var(--font-heading); font-size: 1.3rem; color: var(--accent-cyan); margin-top: 0.2rem;" id="spec-distance">4 – 40 Meters</strong>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1rem;">
+                <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Maximum Brightness</span>
+                <strong style="display: block; font-family: var(--font-heading); font-size: 1.3rem; color: #fff; margin-top: 0.2rem;" id="spec-brightness">≥ 6,500 Nits</strong>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1rem;">
+                <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Ingress Protection</span>
+                <strong style="display: block; font-family: var(--font-heading); font-size: 1.3rem; color: #fff; margin-top: 0.2rem;" id="spec-ip">IP65 / IP65</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comprehensive Technical Parameters Table -->
+          <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2rem;">
+            <h4 style="font-family: var(--font-heading); font-size: 1.2rem; color: #fff; margin-bottom: 1.25rem;">Detailed Parameters</h4>
+            
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem;">
+              <tbody>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                  <td style="padding: 0.75rem 0; color: var(--text-muted);">LED Package Type</td>
+                  <td style="padding: 0.75rem 0; color: #fff; font-weight: 500; text-align: right;" id="param-led">SMD 1921 (Black Frame)</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                  <td style="padding: 0.75rem 0; color: var(--text-muted);">Module Resolution</td>
+                  <td style="padding: 0.75rem 0; color: #fff; font-weight: 500; text-align: right;" id="param-mod-res">80 × 40 Pixels (320×160mm)</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                  <td style="padding: 0.75rem 0; color: var(--text-muted);">Cabinet Dimensions</td>
+                  <td style="padding: 0.75rem 0; color: #fff; font-weight: 500; text-align: right;" id="param-cabinet">960 × 960 mm / Die-Cast Aluminium</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                  <td style="padding: 0.75rem 0; color: var(--text-muted);">Refresh Rate</td>
+                  <td style="padding: 0.75rem 0; color: var(--accent-cyan); font-weight: 600; text-align: right;">≥ 3,840 Hz (PWM IC)</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                  <td style="padding: 0.75rem 0; color: var(--text-muted);">Horizontal / Vertical Angle</td>
+                  <td style="padding: 0.75rem 0; color: #fff; font-weight: 500; text-align: right;">140° / 140° (Wide Cone)</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                  <td style="padding: 0.75rem 0; color: var(--text-muted);">Max / Avg Power Consumption</td>
+                  <td style="padding: 0.75rem 0; color: #fff; font-weight: 500; text-align: right;" id="param-power">750 W/m² / 260 W/m²</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.75rem 0; color: var(--text-muted);">Operating Temperature</td>
+                  <td style="padding: 0.75rem 0; color: #fff; font-weight: 500; text-align: right;">-25°C to +65°C</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+              <button type="button" class="btn btn-primary btn-sm" data-open-quote style="width: 100%;">
+                Get Pricing for This Model
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Dimension & Resolution Calculator -->
+    <section style="padding: 6rem 0;" id="spec-calculator">
+      <div class="container-narrow">
+        <div class="reveal-on-scroll" style="background: var(--bg-tertiary); border: 1px solid var(--border-light); border-radius: var(--radius-xl); padding: clamp(2rem, 5vw, 3.5rem); box-shadow: var(--shadow-card);">
+          
+          <div style="text-align: center; margin-bottom: 2.5rem;">
+            <span class="section-tag" style="justify-content: center;">INTERACTIVE CALCULATOR</span>
+            <h3 style="font-family: var(--font-display); font-size: 2.2rem; color: #fff; margin: 0.5rem 0;">DISPLAY SIZE & POWER ESTIMATOR</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Enter your target screen dimensions to calculate pixel resolution and estimated power demand.</p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; margin-bottom: 2rem;">
+            <div class="form-group">
+              <label class="form-label">Pixel Pitch</label>
+              <select class="form-select" id="calc-pitch-select">
+                <option value="1.8">P1.8 mm (Ultra Fine)</option>
+                <option value="2.5">P2.5 mm (Indoor HD)</option>
+                <option value="3.0">P3.0 mm (Standard Indoor)</option>
+                <option value="4.0" selected>P4.0 mm (Outdoor Standard)</option>
+                <option value="5.0">P5.0 mm (Outdoor High Bright)</option>
+                <option value="6.0">P6.0 mm (Outdoor Large Format)</option>
+                <option value="8.0">P8.0 mm (Highway Billboard)</option>
+                <option value="10.0">P10.0 mm (Monumental)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Screen Width (Feet)</label>
+              <input type="number" step="0.5" class="form-input" id="calc-w" value="16">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Screen Height (Feet)</label>
+              <input type="number" step="0.5" class="form-input" id="calc-h" value="9">
+            </div>
+          </div>
+
+          <!-- Calculated Results -->
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; background: #000; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem; text-align: center;">
+            <div>
+              <span style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Total Surface Area</span>
+              <strong style="display: block; font-family: var(--font-heading); font-size: 1.3rem; color: #fff; margin-top: 0.3rem;" id="calc-res-area">144.0 sq.ft</strong>
+              <span style="font-size: 0.72rem; color: var(--text-muted);" id="calc-res-sqm">(13.38 m²)</span>
+            </div>
+            <div>
+              <span style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Total Pixel Count</span>
+              <strong style="display: block; font-family: var(--font-heading); font-size: 1.3rem; color: var(--accent-cyan); margin-top: 0.3rem;" id="calc-res-pixels">836,352 Pixels</strong>
+              <span style="font-size: 0.72rem; color: var(--text-muted);" id="calc-res-matrix">(1219 × 686 px)</span>
+            </div>
+            <div>
+              <span style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Average Power Draw</span>
+              <strong style="display: block; font-family: var(--font-heading); font-size: 1.3rem; color: #fff; margin-top: 0.3rem;" id="calc-res-avgpwr">3.48 kW</strong>
+              <span style="font-size: 0.72rem; color: var(--text-muted);">260 W/m²</span>
+            </div>
+            <div>
+              <span style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Max Peak Power</span>
+              <strong style="display: block; font-family: var(--font-heading); font-size: 1.3rem; color: #fff; margin-top: 0.3rem;" id="calc-res-maxpwr">10.03 kW</strong>
+              <span style="font-size: 0.72rem; color: var(--text-muted);">750 W/m²</span>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 2rem;">
+            <button type="button" class="btn btn-cyan btn-lg" data-open-quote>
+              Save Configuration & Request Official Quote →
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="brand-logo" style="margin-bottom: 0.5rem;">
+            ODLED
+            <span class="logo-dot"></span>
+          </a>
+          <p>High-performance LED display technology and digital video wall solutions.</p>
+          <div class="footer-contact-pill">
+            <span><strong>Factory:</strong> 4/17 North Phase, SIDCO Industrial Estate, Ambattur, Chennai</span>
+            <span><strong>Tel:</strong> +91-44-42034343 / +91 9003010590</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <div class="footer-links">
+            <a href="/products.html">All Displays</a>
+            <a href="/product-detail.html?product=outdoor-led">Outdoor Video Walls</a>
+            <a href="/product-detail.html?product=indoor-led">Indoor LED Displays</a>
+            <a href="/product-detail.html?product=rental-led">Rental Cabinets</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <div class="footer-links">
+            <a href="/solutions.html">Retail & Malls</a>
+            <a href="/solutions.html">Corporate Boardrooms</a>
+            <a href="/solutions.html">Live Events</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="/about.html">About ODLED</a>
+            <a href="/projects.html">Verified Projects</a>
+            <a href="/contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Portal</h4>
+          <button type="button" class="btn btn-secondary btn-sm" data-open-login style="width: 100%;">Cloud Login</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 ODLED (A Division of Oorjaa). All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="/about.html">Privacy</a>
+          <a href="/about.html">Terms</a>
+          <a href="#">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals & Scripts -->
+  <div class="modal-overlay" id="quote-modal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-close-quote aria-label="Close modal">✕</button>
+      <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: #fff; margin-bottom: 1rem;">Direct Manufacturer Quote</h3>
+      <form id="odled-quote-form">
+        <div class="form-group"><input type="text" class="form-input" placeholder="Full Name or Company" required></div>
+        <div class="form-group"><input type="tel" class="form-input" placeholder="Phone / WhatsApp" required></div>
+        <div class="form-group"><input type="email" class="form-input" placeholder="Email Address" required></div>
+        <button type="submit" class="btn btn-cyan btn-lg" style="width: 100%;">Submit Specification →</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="login-modal" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width: 440px;">
+      <button type="button" class="modal-close-btn" data-close-login aria-label="Close modal">✕</button>
+      <h3 style="font-family: var(--font-display); font-size: 1.6rem; color: #fff; margin-bottom: 1rem;">Display Cloud Portal</h3>
+      <form onsubmit="event.preventDefault(); alert('Connected.');">
+        <div class="form-group"><input type="text" class="form-input" placeholder="User ID" required></div>
+        <div class="form-group"><input type="password" class="form-input" placeholder="Password" required></div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Login →</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+
+  <!-- Interactive Spec Page Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const pitchSpecs = {
+        'P2.5': {
+          name: 'ODLED OS-2.5',
+          category: 'FINE PITCH OUTDOOR',
+          desc: 'High-density outdoor display providing close-distance viewing clarity for luxury storefronts and urban transit shelters.',
+          density: '160,000 Dots/m²',
+          distance: '2.5 – 25 Meters',
+          brightness: '≥ 5,500 Nits',
+          ip: 'IP65 / IP65',
+          led: 'SMD 1415 Black Body',
+          modRes: '128 × 64 Pixels (320×160mm)',
+          cabinet: '640 × 640 mm Die-Cast',
+          power: '850 W/m² / 290 W/m²'
+        },
+        'P3.0': {
+          name: 'ODLED OS-3.0',
+          category: 'PREMIUM OUTDOOR',
+          desc: 'Crisp outdoor video wall ideal for hotel entryways, architectural canopies, and high-footfall shopping centers.',
+          density: '111,111 Dots/m²',
+          distance: '3.0 – 30 Meters',
+          brightness: '≥ 6,000 Nits',
+          ip: 'IP65 / IP65',
+          led: 'SMD 1921 Black Frame',
+          modRes: '104 × 52 Pixels (320×160mm)',
+          cabinet: '960 × 960 mm Die-Cast',
+          power: '800 W/m² / 280 W/m²'
+        },
+        'P4.0': {
+          name: 'ODLED OS-4.0',
+          category: 'OUTDOOR FLAGSHIP',
+          desc: 'The industry benchmark for roadside commercial advertising and shopping center facades. Balances high pixel clarity with exceptional energy efficiency.',
+          density: '62,500 Dots/m²',
+          distance: '4 – 40 Meters',
+          brightness: '≥ 6,500 Nits',
+          ip: 'IP65 / IP65',
+          led: 'SMD 1921 (Black Frame)',
+          modRes: '80 × 40 Pixels (320×160mm)',
+          cabinet: '960 × 960 mm / Die-Cast Aluminium',
+          power: '750 W/m² / 260 W/m²'
+        },
+        'P5.0': {
+          name: 'ODLED OS-5.0',
+          category: 'HIGH BRIGHTNESS BILLBOARD',
+          desc: 'Engineered for rooftop billboards and stadium perimeters, with enhanced heat dissipation and high ambient light penetration.',
+          density: '40,000 Dots/m²',
+          distance: '5 – 50 Meters',
+          brightness: '≥ 7,000 Nits',
+          ip: 'IP65 / IP65',
+          led: 'SMD 2727 High-Nit',
+          modRes: '64 × 32 Pixels (320×160mm)',
+          cabinet: '960 × 960 mm Die-Cast',
+          power: '720 W/m² / 250 W/m²'
+        },
+        'P6.0': {
+          name: 'ODLED OS-6.0',
+          category: 'LARGE FORMAT ROOFTOP',
+          desc: 'Cost-effective large format display for overhead highway hoardings, industrial plants, and landmark public towers.',
+          density: '27,777 Dots/m²',
+          distance: '6 – 70 Meters',
+          brightness: '≥ 7,500 Nits',
+          ip: 'IP65 / IP65',
+          led: 'SMD 3535 High-Power',
+          modRes: '32 × 16 Pixels (192×192mm)',
+          cabinet: '960 × 960 mm Aluminium',
+          power: '700 W/m² / 240 W/m²'
+        },
+        'P8.0': {
+          name: 'ODLED OS-8.0',
+          category: 'HIGHWAY HOARDING',
+          desc: 'Rugged, high-visibility highway advertising screens designed for long viewing distances (80m+) with minimal maintenance.',
+          density: '15,625 Dots/m²',
+          distance: '8 – 100 Meters',
+          brightness: '≥ 7,500 Nits',
+          ip: 'IP65 / IP65',
+          led: 'SMD 3535 High-Power',
+          modRes: '32 × 16 Pixels (256×128mm)',
+          cabinet: '1024 × 1024 mm Aluminium',
+          power: '650 W/m² / 220 W/m²'
+        },
+        'P10.0': {
+          name: 'ODLED OS-10.0',
+          category: 'MONUMENTAL BILLBOARD',
+          desc: 'Ultra-large format monumental screens exceeding 1,000 sq.ft for sports arenas, highway gantries, and transport stations.',
+          density: '10,000 Dots/m²',
+          distance: '10 – 150 Meters',
+          brightness: '≥ 8,000 Nits',
+          ip: 'IP65 / IP65',
+          led: 'DIP / SMD 3535',
+          modRes: '32 × 16 Pixels (320×160mm)',
+          cabinet: '960 × 960 mm / 1280 × 960 mm',
+          power: '600 W/m² / 200 W/m²'
+        }
+      };
+
+      const specButtons = document.querySelectorAll('[data-spec-pitch]');
+      specButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          specButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const p = btn.dataset.specPitch;
+          const data = pitchSpecs[p];
+          if (!data) return;
+
+          document.getElementById('spec-name').textContent = data.name;
+          document.getElementById('spec-category-badge').textContent = data.category;
+          document.getElementById('spec-desc').textContent = data.desc;
+          document.getElementById('spec-density').textContent = data.density;
+          document.getElementById('spec-distance').textContent = data.distance;
+          document.getElementById('spec-brightness').textContent = data.brightness;
+          document.getElementById('spec-ip').textContent = data.ip;
+          document.getElementById('param-led').textContent = data.led;
+          document.getElementById('param-mod-res').textContent = data.modRes;
+          document.getElementById('param-cabinet').textContent = data.cabinet;
+          document.getElementById('param-power').textContent = data.power;
+        });
+      });
+
+      // Calculator logic
+      const pitchInput = document.getElementById('calc-pitch-select');
+      const wInput = document.getElementById('calc-w');
+      const hInput = document.getElementById('calc-h');
+
+      function recalculate() {
+        const pitch = parseFloat(pitchInput.value) || 4.0;
+        const wFt = parseFloat(wInput.value) || 16;
+        const hFt = parseFloat(hInput.value) || 9;
+
+        const areaSqFt = (wFt * hFt).toFixed(1);
+        const areaSqm = (wFt * hFt * 0.092903).toFixed(2);
+
+        const wMm = wFt * 304.8;
+        const hMm = hFt * 304.8;
+        const wPx = Math.round(wMm / pitch);
+        const hPx = Math.round(hMm / pitch);
+        const totalPx = (wPx * hPx).toLocaleString();
+
+        const avgPwr = (areaSqm * 260 / 1000).toFixed(2);
+        const maxPwr = (areaSqm * 750 / 1000).toFixed(2);
+
+        document.getElementById('calc-res-area').textContent = `${areaSqFt} sq.ft`;
+        document.getElementById('calc-res-sqm').textContent = `(${areaSqm} m²)`;
+        document.getElementById('calc-res-pixels').textContent = `${totalPx} Pixels`;
+        document.getElementById('calc-res-matrix').textContent = `(${wPx} × ${hPx} px)`;
+        document.getElementById('calc-res-avgpwr').textContent = `${avgPwr} kW`;
+        document.getElementById('calc-res-maxpwr').textContent = `${maxPwr} kW`;
+      }
+
+      [pitchInput, wInput, hInput].forEach(el => {
+        if (el) el.addEventListener('input', recalculate);
+      });
+      recalculate();
+    });
+  </script>
+</body>
+</html>
