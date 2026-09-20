@@ -13,7 +13,7 @@ export function initTechBreakdown() {
 
   const techData = {
     module: {
-      tag: 'LAYER 01 / CORE COMPONENT',
+      tag: 'CORE MODULE COMPONENT',
       title: 'High-Density LED Module',
       desc: 'The fundamental building block of ODLED video walls. Engineered with premium SMD LEDs, high-refresh ICs, and multi-layer copper PCBs to deliver true-to-life contrast, deep blacks, and exceptional color fidelity.',
       img: '/src/assets/images/products/module-p2.jpg',
@@ -25,7 +25,7 @@ export function initTechBreakdown() {
       ]
     },
     cabinet: {
-      tag: 'LAYER 02 / STRUCTURAL INTEGRITY',
+      tag: 'STRUCTURAL CABINET INTEGRITY',
       title: 'Die-Cast Aluminium Cabinet',
       desc: 'Precision-machined structural framework that houses and aligns modules with zero mechanical tolerance. Ultra-lightweight and naturally corrosion-resistant for both indoor architectural and outdoor environments.',
       img: '/src/assets/images/products/rental-cabinet-3.91.jpg',
@@ -37,7 +37,7 @@ export function initTechBreakdown() {
       ]
     },
     controller: {
-      tag: 'LAYER 03 / PROCESSING INTELLIGENCE',
+      tag: 'PROCESSING INTELLIGENCE',
       title: 'Video Processor & Controller',
       desc: 'The brain of the display system. Sits between your media sources (HDMI, DisplayPort, SDI, IP Streaming) and pixel tiles, providing real-time hardware scaling, color calibration, and low-latency synchronization.',
       img: '/src/assets/images/products/controller.jpg',
@@ -49,7 +49,7 @@ export function initTechBreakdown() {
       ]
     },
     power: {
-      tag: 'LAYER 04 / ELECTRICAL REGULATION',
+      tag: 'ELECTRICAL POWER REGULATION',
       title: 'High-Efficiency SMPS Power System',
       desc: 'Switched-Mode Power Supply units engineered for ultra-high conversion efficiency (92%+). Regulates high-voltage AC from the grid into pure, ripple-free low-voltage DC, ensuring electrical safety and thermal control.',
       img: '/src/assets/images/products/accessories.jpg',
@@ -61,7 +61,7 @@ export function initTechBreakdown() {
       ]
     },
     display: {
-      tag: 'LAYER 05 / FINAL INTEGRATION',
+      tag: 'FINAL SEAMLESS INTEGRATION',
       title: 'Complete Seamless Display Wall',
       desc: 'The assembled LED video wall operates as a single uniform high-impact canvas without visible bezels or seams. Configurable to any aspect ratio, curve radius, or monumental scale.',
       img: '/src/assets/images/products/outdoor-p4.jpg',

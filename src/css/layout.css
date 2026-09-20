@@ -302,17 +302,12 @@ section {
   color: var(--accent-silver);
 }
 
-.section-tag::before {
-  content: '//';
-  opacity: 0.6;
-}
-
 .section-title-large {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  font-size: clamp(1.75rem, 3.5vw, 2.8rem);
   font-weight: 800;
-  line-height: 1.02;
-  letter-spacing: -0.03em;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
   text-transform: uppercase;
   color: #ffffff;
 }
