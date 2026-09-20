@@ -31,7 +31,7 @@ export function initScrollingLED() {
         if (colorMode === 'red') marqueeTrack.classList.add('led-color-red');
         else if (colorMode === 'amber') marqueeTrack.classList.add('led-color-amber');
         else if (colorMode === 'green') marqueeTrack.classList.add('led-color-green');
-        else marqueeTrack.classList.add('led-color-silver');
+        else marqueeTrack.classList.add('led-color-rainbow');
       });
     });
   }

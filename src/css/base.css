@@ -9,12 +9,23 @@
   --bg-surface: rgba(22, 24, 30, 0.75);
   --bg-surface-hover: rgba(30, 33, 42, 0.9);
 
-  /* Grey / Platinum / Silver Accent System */
-  --accent-grey: #e4e4e7;
-  --accent-silver: #d4d4d8;
-  --accent-metallic: #a1a1aa;
-  --accent-glow: rgba(228, 228, 231, 0.18);
-  --accent-dim: rgba(255, 255, 255, 0.08);
+  /* LED Rainbow / Chromatic Display Spectrum Accent System */
+  --accent-rainbow: linear-gradient(135deg, #ff0055 0%, #ff6600 20%, #ffcc00 40%, #00ff88 60%, #00d4ff 80%, #9d00ff 100%);
+  --accent-spectrum: linear-gradient(90deg, #ff1b6b, #ff7b00, #ffd60a, #00f076, #00d4ff, #7928ca, #ff007f);
+  --accent-rgb: linear-gradient(135deg, #ff0055 0%, #00f0ff 50%, #7928ca 100%);
+  --accent-primary: #00f0ff;
+  --accent-pink: #ff007f;
+  --accent-amber: #ffaa00;
+  --accent-green: #00ff88;
+  --accent-purple: #9d00ff;
+  --accent-glow: rgba(0, 240, 255, 0.35);
+  --accent-glow-rainbow: 0 0 35px rgba(255, 0, 128, 0.3), 0 0 50px rgba(0, 240, 255, 0.25);
+  --accent-dim: rgba(0, 240, 255, 0.08);
+
+  /* Spectrum Fallback Aliases */
+  --accent-silver: #00f0ff;
+  --accent-grey: #64d2ff;
+  --accent-metallic: #ff2a6d;
 
   /* Typography Colors */
   --text-primary: #ffffff;
@@ -94,8 +105,8 @@ body {
 }
 
 ::selection {
-  background: var(--accent-silver);
-  color: #08080a;
+  background: #ff007f;
+  color: #ffffff;
 }
 
 img, picture, video, canvas, svg {
@@ -138,7 +149,7 @@ ul, ol {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-silver);
+  background: linear-gradient(180deg, #ff007f, #00f0ff);
 }
 
 /* Containers */
@@ -181,19 +192,30 @@ h1, .hero-headline {
 }
 
 .text-gradient {
-  background: linear-gradient(180deg, #ffffff 10%, #d4d4d8 60%, #71717a 100%);
+  background: linear-gradient(135deg, #ffffff 20%, #00f0ff 65%, #ff007f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.text-gradient-silver {
-  background: linear-gradient(135deg, #ffffff 20%, #a1a1aa 80%, #71717a 100%);
+.text-gradient-silver,
+.text-gradient-rainbow,
+.text-gradient-spectrum {
+  background: linear-gradient(90deg, #ff1b6b, #ff7b00, #ffd60a, #00f076, #00d4ff, #7928ca, #ff007f);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text-flow 6s linear infinite;
+}
+
+.text-gradient-rgb {
+  background: linear-gradient(135deg, #ff0055 0%, #ffaa00 40%, #00f0ff 80%, #9d00ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.glow-silver {
-  text-shadow: 0 0 25px rgba(228, 228, 231, 0.25);
+.glow-silver,
+.glow-rainbow {
+  text-shadow: 0 0 25px rgba(0, 240, 255, 0.4), 0 0 45px rgba(255, 0, 128, 0.3);
 }
 
 .visually-hidden {

@@ -89,7 +89,8 @@
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--text-primary);
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
 }
 
 .nav-link::after {
@@ -98,8 +99,10 @@
   bottom: -2px;
   left: 0;
   width: 0;
-  height: 1.5px;
-  background: var(--accent-silver);
+  height: 2px;
+  background: linear-gradient(90deg, #ff007f, #ff9900, #00f0ff, #9d00ff);
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
   transition: width var(--transition-normal);
 }
 
@@ -293,13 +296,29 @@ section {
 .section-tag {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   font-family: var(--font-mono);
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--accent-silver);
+  background: linear-gradient(90deg, #ff2a6d, #ff9f1c, #05ffa1, #00f0ff, #b967ff, #ff2a6d);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text-flow 6s linear infinite;
+}
+
+.section-tag::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff0055, #00f0ff);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.9), 0 0 16px rgba(255, 0, 85, 0.7);
+  flex-shrink: 0;
+  animation: pulse-glow 2s ease-in-out infinite;
 }
 
 .section-title-large {
@@ -422,6 +441,12 @@ section {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.75);
   position: relative;
   background: #0f1013;
+  transition: all var(--transition-normal);
+}
+
+.footer-map-frame-wrap:hover {
+  border-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.85), 0 0 30px rgba(0, 240, 255, 0.2), 0 0 45px rgba(255, 0, 128, 0.15);
 }
 
 .footer-map-iframe {
