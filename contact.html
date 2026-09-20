@@ -62,9 +62,9 @@
     </div>
   </div>
 
-  <main style="padding-top: 8rem;">
+  <main class="page-main">
     <!-- Contact Header -->
-    <section style="padding: 4rem 0 2rem;">
+    <section style="padding: 3rem 0 2rem;">
       <div class="container">
         <div class="section-header-editorial reveal-on-scroll">
           <span class="section-tag">DIRECT ENGINEERING INQUIRY</span>
@@ -74,11 +74,11 @@
           </p>
         </div>
 
-        <div class="grid-2 reveal-on-scroll" style="gap: 3.5rem; align-items: start; margin-top: 2rem;">
+        <div class="grid-2 reveal-on-scroll" style="gap: clamp(2rem, 3.5vw, 3.5rem); align-items: start; margin-top: 2rem;">
           
           <!-- Left: Contact Details & Factory Info -->
           <div>
-            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 2rem;">
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: clamp(1.5rem, 3vw, 2.5rem); margin-bottom: 2rem;">
               <span class="badge badge-grey" style="margin-bottom: 1rem;">DIRECT CONTACT LINES</span>
               <h3 style="font-family: var(--font-display); font-size: 1.6rem; color: #fff; margin-bottom: 1.25rem;">Factory & Head Office</h3>
               
@@ -107,7 +107,7 @@
             </div>
 
             <!-- Guarantee Box -->
-            <div style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: var(--radius-lg); padding: 1.8rem;">
+            <div style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: var(--radius-lg); padding: clamp(1.25rem, 2.5vw, 1.8rem);">
               <h4 style="font-family: var(--font-heading); color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">⚡ 2-Hour Quotation Guarantee</h4>
               <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
                 During regular business hours (Mon–Sat 9AM–7PM IST), our technical team will review your screen dimensions and provide a full hardware BOM & commercial quote within 120 minutes.
@@ -116,14 +116,14 @@
           </div>
 
           <!-- Right: Comprehensive Quote Builder Form -->
-          <div style="background: var(--bg-tertiary); border: 1px solid var(--border-light); border-radius: var(--radius-xl); padding: clamp(2rem, 4vw, 3rem); box-shadow: var(--shadow-card);">
+          <div style="background: var(--bg-tertiary); border: 1px solid var(--border-light); border-radius: var(--radius-xl); padding: clamp(1.5rem, 4vw, 3rem); box-shadow: var(--shadow-card);">
             <div style="margin-bottom: 1.5rem;">
               <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: #fff; margin-bottom: 0.4rem;">Send Project Inquiry</h3>
               <p style="color: var(--text-secondary); font-size: 0.9rem;">Fill out the form below to receive factory direct pricing.</p>
             </div>
 
             <form id="contact-page-form" onsubmit="event.preventDefault(); alert('Inquiry submitted successfully! Our engineering team will contact you shortly.'); this.reset();">
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-row-2">
                 <div class="form-group">
                   <label class="form-label">Full Name *</label>
                   <input type="text" class="form-input" placeholder="Your name" required>
@@ -134,7 +134,7 @@
                 </div>
               </div>
 
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-row-2">
                 <div class="form-group">
                   <label class="form-label">Phone / WhatsApp *</label>
                   <input type="tel" class="form-input" placeholder="+91 98403 63100" required>
@@ -145,7 +145,7 @@
                 </div>
               </div>
 
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-row-2">
                 <div class="form-group">
                   <label class="form-label">Display Requirement *</label>
                   <select class="form-select" required>
