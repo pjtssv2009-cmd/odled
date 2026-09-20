@@ -1,5 +1,5 @@
 /**
- * Hero Canvas: Interactive LED Matrix & Glow Particle Visualizer
+ * Hero Canvas: Interactive LED Matrix & Ambient Silver Particle Visualizer
  */
 export function initHeroCanvas() {
   const canvas = document.getElementById('hero-canvas');
@@ -28,9 +28,8 @@ export function initHeroCanvas() {
         dots.push({
           x: c * spacing + (spacing / 2),
           y: r * spacing + (spacing / 2),
-          baseAlpha: 0.12 + Math.random() * 0.08,
-          currentAlpha: 0.15,
-          colorPhase: Math.random() * Math.PI * 2,
+          baseAlpha: 0.1 + Math.random() * 0.08,
+          currentAlpha: 0.12,
           radius: 1.5
         });
       }
@@ -60,24 +59,24 @@ export function initHeroCanvas() {
       const dy = mouse.y - dot.y;
       const dist = Math.sqrt(dx * dx + dy * dy);
 
-      // Light wave pulse across grid
+      // Subtle light pulse across matrix
       const wave = Math.sin(t + dot.x * 0.005 + dot.y * 0.005);
-      let alpha = dot.baseAlpha + wave * 0.08;
+      let alpha = dot.baseAlpha + wave * 0.06;
 
       let radius = dot.radius;
-      let color = `rgba(0, 240, 255, ${alpha})`;
+      let color = `rgba(255, 255, 255, ${alpha})`;
 
-      // Mouse proximity effect
+      // Mouse proximity illumination
       if (dist < mouse.radius) {
         const proximity = 1 - (dist / mouse.radius);
         alpha = Math.min(1, alpha + proximity * 0.85);
         radius = dot.radius + proximity * 2;
-        color = `rgba(0, 240, 255, ${alpha})`;
+        color = `rgba(255, 255, 255, ${alpha})`;
 
-        // Glow halo for close dots
+        // Ambient halo
         ctx.beginPath();
         ctx.arc(dot.x, dot.y, radius * 3, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(0, 240, 255, ${proximity * 0.15})`;
+        ctx.fillStyle = `rgba(228, 228, 231, ${proximity * 0.12})`;
         ctx.fill();
       }
 

@@ -1,22 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Color Palette - Premium Dark Technology */
-  --bg-primary: #070709;
-  --bg-secondary: #0d0e12;
-  --bg-tertiary: #13151b;
-  --bg-elevated: #1a1d24;
-  --bg-surface: rgba(18, 20, 26, 0.7);
-  --bg-surface-hover: rgba(26, 30, 40, 0.85);
+  /* Color Palette - Premium Titanium / Dark Monochromatic Technology */
+  --bg-primary: #08080a;
+  --bg-secondary: #0f1013;
+  --bg-tertiary: #16171d;
+  --bg-elevated: #1e2026;
+  --bg-surface: rgba(22, 24, 30, 0.75);
+  --bg-surface-hover: rgba(30, 33, 42, 0.9);
 
-  /* Accents */
-  --accent-cyan: #00f0ff;
-  --accent-cyan-dim: rgba(0, 240, 255, 0.15);
-  --accent-cyan-glow: rgba(0, 240, 255, 0.4);
-  --accent-blue: #38bdf8;
-  --accent-amber: #f59e0b;
-  --accent-green: #10b981;
-  --accent-red: #ef4444;
+  /* Grey / Platinum / Silver Accent System */
+  --accent-grey: #e4e4e7;
+  --accent-silver: #d4d4d8;
+  --accent-metallic: #a1a1aa;
+  --accent-glow: rgba(228, 228, 231, 0.18);
+  --accent-dim: rgba(255, 255, 255, 0.08);
 
   /* Typography Colors */
   --text-primary: #ffffff;
@@ -26,17 +24,17 @@
 
   /* Borders & Dividers */
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-light: rgba(255, 255, 255, 0.15);
-  --border-focus: rgba(0, 240, 255, 0.5);
-  --border-hover: rgba(255, 255, 255, 0.25);
+  --border-light: rgba(255, 255, 255, 0.16);
+  --border-focus: rgba(228, 228, 231, 0.5);
+  --border-hover: rgba(255, 255, 255, 0.3);
 
-  /* Fonts */
+  /* Typography Families */
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: 'Syne', 'Space Grotesk', sans-serif;
-  --font-heading: 'Space Grotesk', 'Inter', sans-serif;
+  --font-display: 'Syne', 'Outfit', sans-serif;
+  --font-heading: 'Outfit', 'Space Grotesk', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Spacing */
+  /* Spacing Scale */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -66,9 +64,9 @@
   --transition-spring: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 
   /* Shadows */
-  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 30px rgba(0, 240, 255, 0.25);
-  --shadow-card: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 30px rgba(228, 228, 231, 0.12);
+  --shadow-card: 0 20px 40px -15px rgba(0, 0, 0, 0.8);
 }
 
 /* Reset & Box Sizing */
@@ -93,13 +91,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  selection-background-color: var(--accent-cyan);
-  selection-color: var(--bg-primary);
 }
 
 ::selection {
-  background: var(--accent-cyan);
-  color: var(--bg-primary);
+  background: var(--accent-silver);
+  color: #08080a;
 }
 
 img, picture, video, canvas, svg {
@@ -137,15 +133,15 @@ ul, ol {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.18);
   border-radius: var(--radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-cyan);
+  background: var(--accent-silver);
 }
 
-/* Utility Classes */
+/* Containers */
 .container {
   width: 100%;
   max-width: var(--container-max);
@@ -173,20 +169,31 @@ ul, ol {
   padding-right: clamp(1rem, 4vw, 2.5rem);
 }
 
+/* H1 & Large Typography Styles */
+h1, .hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 7vw, 6.2rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .text-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+  background: linear-gradient(180deg, #ffffff 10%, #d4d4d8 60%, #71717a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.text-gradient-cyan {
-  background: linear-gradient(135deg, #ffffff 30%, var(--accent-cyan) 100%);
+.text-gradient-silver {
+  background: linear-gradient(135deg, #ffffff 20%, #a1a1aa 80%, #71717a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.glow-cyan {
-  text-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+.glow-silver {
+  text-shadow: 0 0 25px rgba(228, 228, 231, 0.25);
 }
 
 .visually-hidden {

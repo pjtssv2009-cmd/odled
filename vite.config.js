@@ -9,6 +9,7 @@ export default defineConfig({
         products: resolve(__dirname, 'products.html'),
         productDetail: resolve(__dirname, 'product-detail.html'),
         solutions: resolve(__dirname, 'solutions.html'),
+        technology: resolve(__dirname, 'technology.html'),
         projects: resolve(__dirname, 'projects.html'),
         projectDetail: resolve(__dirname, 'project-detail.html'),
         about: resolve(__dirname, 'about.html'),

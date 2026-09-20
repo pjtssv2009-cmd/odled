@@ -96,7 +96,7 @@ export function initModals() {
         : `${(totalPixels / 1000).toFixed(0)}k Pixels`;
 
       calcOutput.innerHTML = `
-        <div style="background: rgba(0, 240, 255, 0.08); border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 8px; padding: 0.8rem 1rem; font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent-cyan); line-height: 1.5;">
+        <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 8px; padding: 0.8rem 1rem; font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent-silver); line-height: 1.5;">
           <strong>Configuration Preview:</strong> ${appType} ${pitch} • ${w} × ${h} ft (${areaSqFt} sq.ft)<br>
           <span style="color: #ffffff;">Est. Screen Resolution: ~${formattedPixels}</span>
         </div>
