@@ -1,3 +1,9 @@
+import moduleImg from '../assets/images/products/module-p2.jpg';
+import cabinetImg from '../assets/images/products/rental-cabinet-3.91.jpg';
+import controllerImg from '../assets/images/products/controller.jpg';
+import accessoriesImg from '../assets/images/products/accessories.jpg';
+import outdoorImg from '../assets/images/products/outdoor-p4.jpg';
+
 /**
  * Technology Section: Modular Exploded Architecture Interactive Explorer
  */
@@ -16,7 +22,7 @@ export function initTechBreakdown() {
       tag: 'CORE MODULE COMPONENT',
       title: 'High-Density LED Module',
       desc: 'The fundamental building block of ODLED video walls. Engineered with premium SMD LEDs, high-refresh ICs, and multi-layer copper PCBs to deliver true-to-life contrast, deep blacks, and exceptional color fidelity.',
-      img: '/src/assets/images/products/module-p2.jpg',
+      img: moduleImg,
       bullets: [
         'Available in pixel pitches from P1.25mm up to P10mm',
         '3840Hz+ ultra-high refresh rate for flicker-free camera capture',
@@ -28,7 +34,7 @@ export function initTechBreakdown() {
       tag: 'STRUCTURAL CABINET INTEGRITY',
       title: 'Die-Cast Aluminium Cabinet',
       desc: 'Precision-machined structural framework that houses and aligns modules with zero mechanical tolerance. Ultra-lightweight and naturally corrosion-resistant for both indoor architectural and outdoor environments.',
-      img: '/src/assets/images/products/rental-cabinet-3.91.jpg',
+      img: cabinetImg,
       bullets: [
         'CNC-milled die-cast aluminium for sub-millimeter seam accuracy',
         'Natural passive convection airflow channels for heat dissipation',
@@ -40,7 +46,7 @@ export function initTechBreakdown() {
       tag: 'PROCESSING INTELLIGENCE',
       title: 'Video Processor & Controller',
       desc: 'The brain of the display system. Sits between your media sources (HDMI, DisplayPort, SDI, IP Streaming) and pixel tiles, providing real-time hardware scaling, color calibration, and low-latency synchronization.',
-      img: '/src/assets/images/products/controller.jpg',
+      img: controllerImg,
       bullets: [
         'Real-time seamless scaling, PIP, and multi-window composition',
         'Hardware-level color correction and real-time screen dimming',
@@ -52,7 +58,7 @@ export function initTechBreakdown() {
       tag: 'ELECTRICAL POWER REGULATION',
       title: 'High-Efficiency SMPS Power System',
       desc: 'Switched-Mode Power Supply units engineered for ultra-high conversion efficiency (92%+). Regulates high-voltage AC from the grid into pure, ripple-free low-voltage DC, ensuring electrical safety and thermal control.',
-      img: '/src/assets/images/products/accessories.jpg',
+      img: accessoriesImg,
       bullets: [
         '92%+ power conversion efficiency minimizing thermal output',
         'Over-voltage, over-current, and short-circuit auto-recovery protection',
@@ -64,7 +70,7 @@ export function initTechBreakdown() {
       tag: 'FINAL SEAMLESS INTEGRATION',
       title: 'Complete Seamless Display Wall',
       desc: 'The assembled LED video wall operates as a single uniform high-impact canvas without visible bezels or seams. Configurable to any aspect ratio, curve radius, or monumental scale.',
-      img: '/src/assets/images/products/outdoor-p4.jpg',
+      img: outdoorImg,
       bullets: [
         '100% bezel-free seamless visual canvas of unlimited size',
         '140° to 160° ultra-wide horizontal and vertical viewing angles',
